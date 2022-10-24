@@ -1,0 +1,110 @@
+body{
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'aside section section'
+    'footer footer footer';
+    grid-template-columns: 15% auto auto;
+    grid-template-rows: 8% 85% 7%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    display: grid;
+    grid-area: header;
+    background-color:steelblue;
+    justify-items:center;
+    align-items: center;
+    color: aliceblue;
+}
+
+aside{
+    grid-area: aside;
+    background-color:lightgray;
+    padding-left: 15%;
+}
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.categorias{
+
+    display: flex;
+    flex-direction: row;
+    font-size: 90%;
+    height: 30px;
+}
+
+.categorias h4{
+
+    font-weight: lighter;
+
+}
+
+.categorias h5{
+
+    font-weight: lighter;
+    color: gray;
+}
+
+section{
+    grid-area: section;
+    background-color: lightgray;
+    padding: 2%;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+
+}
+
+.cards{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.cards h3{
+
+    margin: 2px;
+}
+
+.cards p{
+
+    color: gray;
+}
+
+.boton{
+
+    background-image: linear-gradient(steelblue 0, steelblue 100%);
+    border-style: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    width: 100%;
+}
+
+.boton:hover{
+
+    background-image: linear-gradient(rgb(1, 44, 78) 0, rgb(1, 44, 78) 100%);
+
+}
+
+footer{
+    display: grid;
+    grid-area: footer;
+    background-color: white;
+    justify-items:center;
+    align-items: center;
+}
